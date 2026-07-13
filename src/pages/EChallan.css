@@ -1,0 +1,85 @@
+.echallan-container {
+    max-width: 600px;
+    margin: 4rem auto;
+    text-align: center;
+}
+
+.echallan-header {
+    margin-bottom: 3rem;
+}
+
+.header-icon {
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+
+.echallan-header h1 {
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.echallan-header p {
+    color: var(--text-muted);
+    font-size: 1.1rem;
+}
+
+.echallan-card {
+    padding: 3rem;
+}
+
+.echallan-form {
+    text-align: left;
+}
+
+.echallan-form .form-group label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 500;
+    margin-bottom: 0.75rem;
+    color: var(--text-main);
+    font-size: 1.05rem;
+}
+
+.vehicle-input {
+    font-size: 1.2rem;
+    padding: 1.2rem;
+    letter-spacing: 1px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.proceed-btn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    font-size: 1.1rem;
+    padding: 1.2rem;
+    margin-top: 2rem;
+}
+
+.security-note {
+    margin-top: 1.75rem;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    text-align: center;
+    line-height: 1.5;
+    padding: 0 1rem;
+}
+
+.fade-in {
+    animation: fadeIn 0.4s ease-in-out;
+}
+
+@media (max-width: 768px) {
+    .echallan-container {
+        margin: 2rem auto;
+        padding: 0 1rem;
+    }
+
+    .echallan-card {
+        padding: 2rem;
+    }
+}

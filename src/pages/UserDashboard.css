@@ -1,0 +1,113 @@
+.user-dashboard {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.dashboard-header {
+    margin-bottom: 2rem;
+}
+
+.dashboard-header h1 {
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    color: var(--text-main);
+}
+
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+}
+
+.dashboard-section {
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.dashboard-section h2 {
+    font-size: 1.2rem;
+    margin-bottom: 1.25rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.booking-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    margin-bottom: 1rem;
+    background: var(--bg-color);
+}
+
+.booking-info h4 {
+    margin-bottom: 0.25rem;
+    font-size: 1.05rem;
+}
+
+.booking-info p {
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.status-badge {
+    padding: 0.3rem 0.8rem;
+    border-radius: var(--radius-full);
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.status-active {
+    background-color: var(--success);
+    color: white;
+}
+
+.status-completed {
+    background-color: var(--text-muted);
+    color: white;
+}
+
+.status-pending {
+    background-color: var(--warning, #f59e0b);
+    color: white;
+}
+
+.status-validated {
+    background-color: var(--primary);
+    color: white;
+}
+
+.status-action-taken {
+    background-color: var(--danger, #ef4444);
+    color: white;
+}
+
+.status-rejected {
+    background-color: #64748b;
+    color: white;
+}
+
+.vehicle-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.vehicle-item:last-child {
+    border-bottom: none;
+}
+
+@media (max-width: 768px) {
+    .dashboard-grid {
+        grid-template-columns: 1fr;
+    }
+}

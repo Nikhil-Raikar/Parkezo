@@ -1,0 +1,122 @@
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.navbar-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-logo a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.navbar-logo h2 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--text-main);
+    letter-spacing: -0.5px;
+}
+
+.navbar-logo h2 span {
+    color: var(--primary);
+}
+
+.navbar-menu {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--text-muted);
+    transition: color 0.2s ease;
+    text-decoration: none;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--primary);
+}
+
+.navbar-actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.theme-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-muted);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: all 0.2s ease;
+}
+
+.theme-toggle:hover {
+    background-color: var(--border-color);
+    color: var(--text-main);
+}
+
+.mobile-menu-toggle {
+    display: none;
+    color: var(--text-main);
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .navbar-container {
+        padding: 0 1rem;
+    }
+
+    .desktop-menu {
+        display: none;
+    }
+
+    .mobile-menu-toggle {
+        display: block;
+    }
+
+    .mobile-menu {
+        display: block;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: var(--surface-color);
+        border-bottom: 1px solid var(--border-color);
+        padding: 1rem 2rem;
+        z-index: 1001;
+    }
+
+    .mobile-menu ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+}
