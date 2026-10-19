@@ -19,8 +19,10 @@ Welcome to **Parkezo**! A modern, secure, and user-friendly smart parking applic
   * Detailed history of past and active bookings.
   * Track status of **Reported Violations** (e.g., "Pending Review", "Validated", "Action Taken").
   * Secure profile where core identity (Name, Phone) is locked to Aadhaar verification, allowing only email updates.
-* **Host a Parking Spot** ✨
+* **Host a Parking Spot** 🚗
   * Hosting a spot be it your home or parking space.
+* **Stunning UI/UX** ✨
+  * Modern, responsive "Glassmorphism" aesthetic.
   * Smooth animations, responsive layout, and beautiful data presentation.
 
 ---
